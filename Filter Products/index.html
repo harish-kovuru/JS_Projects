@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filter Products</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="filter-container">
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="Search for products">
+            <button id="search-btn">Search</button>
+        </div>
+        <div class="category-container">
+            <div class="category-btn" data-category="all">All Products</div>
+            <div class="category-btn" data-category="Electronics">Electronics</div>
+            <div class="category-btn" data-category="Clothing">Clothing</div>
+            <div class="category-btn" data-category="Home & Garden">Home & Garden</div>
+            <div class="category-btn" data-category="Sports & Outdoors">Sports & Outdoors</div>
+
+        </div>
+    </div>
+
+    <div id="product-list">
+        <div class="product-item" data-category="Electronics">
+            <h3>Samsung Galaxy S21</h3>
+            <p>A powerful smartphone with a 120Hz AMOLED display and 5G connectivity.</p>
+        </div>
+        <div class="product-item" data-category="Clothing">
+            <h3>Nike Air Max 270</h3>
+            <p>A stylish sneaker with a comfortable fit and breathable material.</p>
+            
+        </div>
+        <div class="product-item" data-category="Home & Garden">
+            <h3>IKEA Sofa</h3>
+            <p>A comfortable sofa with a modern design and high-quality materials.</p>
+        </div>
+        <div class="product-item" data-category="Sports & Outdoors">
+            <h3>Adidas Ultraboost</h3>
+            <p>A high-performance running shoe with a responsive cushioning system.</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
