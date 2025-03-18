@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown</title>
+    <style>
+        .container{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+        .countdown{
+            font-size: 2rem;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .countdown-item{
+            font-size: 2rem;
+            font-weight: 100;
+            font-family: 'Courier New', Courier, monospace;
+        }
+    </style>
+    
+</head>
+<body>
+    <div class="container">
+        <div class="countdown">
+            <h1>Countdown until 2026</h1>
+        </div>
+        <div class="countdown-item" id="countdown"></div>
+
+    </div>
+    <script>
+    
+        const tragetDate = new Date('2026-01-01T00:00:00');
+
+        function updateCountdown(){
+            const currentDate = new Date();
+            const timeDifference = tragetDate - currentDate;
+            const days = Math.floor(timeDifference /(1000 * 60 * 60 *24));
+            const hours = Math.floor((timeDifference % (1000 * 60 * 60 *24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
+        
+
+            document.getElementById('countdown').innerHTML = `${days} days ${hours} H: ${minutes} M: ${seconds} S`;
+            setTimeout(updateCountdown, 1000);
+        }
+        updateCountdown();
+    </script>
+</body>
+</html>
