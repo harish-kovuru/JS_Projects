@@ -1,0 +1,40 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.container{
+    background-color: #e8dcdc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+.h1{
+    text-align: center;
+    font-size: 24px;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 10px;
+}
+#log,#state{
+    background-color: #ffa500;
+    width: 500px;
+    height: 50px;
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+.button-container{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+button{
+    font-size: 20px;
+    padding: 10px 20px;
+    margin-top: 20px;
+    margin-right: 20px;
+}

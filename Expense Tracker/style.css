@@ -1,0 +1,52 @@
+.container{
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 1);
+    padding-top: 20px;
+}   
+.body{
+    background-color: #fdf8f8;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+input[type="text"], input[type="number"], select, button{
+   width: 100%;
+   padding: 10px;
+   border: 1px solid #ccc;
+   border-radius: 4px;
+   box-sizing: border-box;
+   margin-bottom: 10px;
+}
+
+button{
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover{
+    background-color: #218838;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+th,td{
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+
+}
+th{
+    background-color: #1fa325;
+    color: white;
+}
