@@ -18,7 +18,7 @@ A collection of simple JavaScript projects built to learn and strengthen core Ja
 
 ## 🚀 Getting Started
 
-1. Clone the repository:
+ Clone the repository:
    ```bash
    git clone https://github.com/harish-kovuru/JS_Projects.git
    cd Js_Projects
